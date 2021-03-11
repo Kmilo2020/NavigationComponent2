@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.kmilo.navigationcomponent2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         val navHosFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         navController = navHosFragment.findNavController()
+
+        //Tool Bar
+        setSupportActionBar(binding.toolbar)
+        setupActionBarWithNavController(navController)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
