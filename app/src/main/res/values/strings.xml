@@ -6,4 +6,7 @@
     <string name="tv_cuarto_fragment">Cuarto Fragment</string>
     <string name="btn_global_action">Global Action</string>
     <string name="btn_deep_link">Deep Link</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="fragment_3">Fragment 3</string>
 </resources>
